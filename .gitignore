@@ -1,0 +1,9 @@
+*.aux
+*.log
+*.pdf
+!cv.pdf
+*.out
+
+*.sty
+
+.DS_Store
