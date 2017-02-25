@@ -1,6 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{jcgcv}[2017/02/18 JCGrant CV]
 \LoadClass[a4paper]{article}
+\RequirePackage[T1]{fontenc}
 \RequirePackage{titlesec}
 \RequirePackage{parskip}
 \RequirePackage{setspace}
