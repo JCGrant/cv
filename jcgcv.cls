@@ -68,3 +68,7 @@
 \newcommand{\myhref}[2]{%
   \href{#1}{\color{primarycolor}\setulcolor{primarycolor}\ul{#2}}
 }
+
+\newcommand{\githublink}[1]{%
+  \myhref{https://github.com/JCGrant/#1}{github.com/JCGrant/#1}
+}
