@@ -3,6 +3,10 @@
 *.pdf
 !cv.pdf
 *.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
 
 *.sty
 
