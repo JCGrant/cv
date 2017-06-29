@@ -36,15 +36,15 @@
 
 \newcommand{\name}[1]{%
   \vspace{-0.35cm} % Fixes the incorrect height for the name and details minipages
-  \fontsize{36pt}{44pt}\selectfont{#1}
+  \fontsize{36pt}{44pt}\selectfont{#1}%
 }
 
 \newcommand{\datedtext}[2]{%
-  #1 \hfill \textmd{\color{grey}#2}
+  #1 \hfill \textmd{\color{grey}#2}%
 }
 
 \newcommand{\datedsubsection}[2]{%
-  \subsection[#1]{\datedtext{#1}{#2}}
+  \subsection[#1]{\datedtext{#1}{#2}}%
 }
 
 \newcommand{\myhref}[2]{%
@@ -52,5 +52,5 @@
 }
 
 \newcommand{\githublink}[1]{%
-  \myhref{https://github.com/JCGrant/#1}{github.com/JCGrant/#1}
+  \myhref{https://github.com/JCGrant/#1}{github.com/JCGrant/#1}%
 }
