@@ -10,7 +10,6 @@
 \RequirePackage[hidelinks]{hyperref}
 \RequirePackage{soul}
 \RequirePackage{changepage}
-\RequirePackage[hidelinks]{hyperref}
 \RequirePackage[usenames, dvipsnames]{xcolor}
 \RequirePackage[margin=1cm]{geometry}
 
@@ -49,7 +48,7 @@
 }
 
 \newcommand{\myhref}[2]{%
-  \href{#1}{\color{primarycolor}\setulcolor{primarycolor}\ul{#2}}
+  \href{#1}{\color{primarycolor}\setulcolor{primarycolor}\ul{#2}}%
 }
 
 \newcommand{\githublink}[1]{%
