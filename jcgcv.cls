@@ -19,27 +19,14 @@
 
 \titleformat{\section}
   {\Large\color{primarycolor}}
-  {}{0em}
-  {}
+  {}{0em}{}
   [\titlerule]
 
 \titleformat{\subsection}
   {\footnotesize\bfseries}
-  {}{0em}
-  {}
+  {}{0em}{}
 \titlespacing{\subsection}
-  {0em}
-  {0.1em}
-  {0.1em}
-
-\titleformat{\subsubsection}
-  {\footnotesize\bfseries}
-  {}{0em}
-  {}
-\titlespacing{\subsubsection}
-  {0em}
-  {0.1em}
-  {0.11em}
+  {0em}{0.3em}{0.1em}
 
 
 \newcommand{\columnWidth}{0.475\textwidth}
@@ -59,10 +46,6 @@
 
 \newcommand{\datedsubsection}[2]{%
   \subsection[#1]{\datedtext{#1}{#2}}
-}
-
-\newcommand{\datedsubsubsection}[2]{%
-  \subsubsection[#1]{\datedtext{#1}{#2}}
 }
 
 \newcommand{\myhref}[2]{%
