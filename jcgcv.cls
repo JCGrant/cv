@@ -54,3 +54,7 @@
 \newcommand{\githublink}[1]{%
   \myhref{https://github.com/JCGrant/#1}{github.com/JCGrant/#1}%
 }
+
+\newcommand{\vgap}{%
+  \vspace{1em}
+}
