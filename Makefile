@@ -2,7 +2,7 @@ all:
 	pdflatex --jobname=cv main.tex
 
 watch:
-	fswatch -o jcgcv.cls main.tex | xargs -n1 -I{} make
+	ls jcgcv.cls main.tex | entr /bin/sh -c "make && pkill -HUP mupdf"
 
 clean:
 	rm -rf *.out *.aux *.log *.pdf
