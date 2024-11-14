@@ -6,7 +6,7 @@
 \fontfamily{phv}
 \selectfont
 \pagenumbering{gobble}
-\setlist[itemize]{leftmargin=0.7cm, label={--}}
+\setlist[itemize]{leftmargin=0.32cm, label={-}}
 
 \begin{column}
 
@@ -14,6 +14,7 @@
 
 \end{column}\begin{column}
 
+  \fixTop
   \begin{flushright}
     \myhref{mailto:james@jcgrant.com}{james@jcgrant.com}\\
     \myhref{https://www.jcgrant.com}{www.jcgrant.com}\\
@@ -23,86 +24,99 @@
 
 \end{column}\begin{column}
 
-  \section{Work}
-  \datedsubsection{Independent Computer Science Educator}{2022 - 2023}
-  \begin{itemize}\setlength\itemsep{0.25em}
-    \item Created and taught bespoke courses on Computer Science and best
-          Software Engineering Practices to junior/mid level engineers.
+\section{Work}
+  \datedsubsection{Senior Software Engineer - Freelance}{2024 - present}
+  \begin{itemize}
+    \item Wrote a virtual avatar app, using the user's camera, microphone level,
+          and machine learning to puppeteer the character in real-time.
+    \item Wrote and deployed a task management system on K8S, enabling
+          users to view analytics of their workflows, and optimise their time.
   \end{itemize}
-  \vgap
+
+  \datedsubsection{Senior Software Engineer - Odin Vision}{2023 - 2024}
+  \begin{itemize}
+    \item Rearchitected Machine Learning pipelines by breaking up monolithic
+          services into smaller microservices; increasing FPS performance on
+          the client, and overall data throughput.
+    \item Rearchitected the ML team's code into a central repo, enabling greater
+          collaboration between the Dev and ML teams, and leading to far less
+          mistakes being made while deploying new models to production.
+    \item Restructured git repos and Dockerfiles, enabling a greater developer
+          experience, and simpler deployments to Kubernetes.
+    \item Learnt how to manage K8S on GCP, and the related tools like Helm.
+  \end{itemize}
+
+  \datedsubsection{Computer Science Educator - Freelance}{2022 - 2023}
+  \begin{itemize}
+    \item Wrote, marketed, and sold bespoke one-on-one courses on Computer
+          Science, and best modern Software Engineering practices.
+  \end{itemize}
+
   \datedsubsection{Senior Software Engineer - Kidsloop}{2021 - 2022}
-  \begin{itemize}\setlength\itemsep{0.25em}
+  \begin{itemize}
+    \item Refactored the entire networking stack of a full stack React app, fixing
+          dozens of bugs which had been breaking production for months.
+    \item Refactored the WebRTC service by removing it's state, using the new
+          networking stack, increasing possible video-chat sizes by 10x.
     \item Built a high throughput distributed data processing pipeline, in Rust.
-    \item Built a tool which takes Rust libraries and compiled them to Python
-          and Typescript (used by other teams at the company).
-    \item Refactored the entire networking stack, of a full stack React app
-          fixing dozens of bugs which had been breaking production for months.
-    \item Refactored the WebRTC service by removing it's state, using the
-          new networking stack, increasing possible class sizes by 10x.
+    \item Built Rust libraries which compiled to both Python and Typescript.
   \end{itemize}
-  \vgap
-  \datedsubsection{Content Creator (Mental Health Break)}{2020 - 2021}
-  \begin{itemize}\setlength\itemsep{0.25em}
-    \item The period during Coronavirus took a toll on my Mental Health, so I
-          took a few months away from Software Engineering in industry.
-    \item I spent some time learning new creative skills like digital art, live
-          streaming, video editing, music, and creative coding.
-    \item I grew a pretty successful Social Media presence which even earns a
-          decent bit of money to this day!
+
+  \datedsubsection{Content Creator - Self Employed}{2020 - present}
+  \begin{itemize}
+    \item Learnt new creative skills like creative coding, digital art, live streaming.
+    \item Grew a successful Social Media presence of over 200,000 followers.
   \end{itemize}
-  \vgap
+
   \datedsubsection{Senior ML Software Engineer - Babylon Health}{2019 - 2020}
-  \begin{itemize}\setlength\itemsep{0.25em}
-    \item Wrote a Natural Language Understanding pipeline. Editing, testing,
-          and deploying was as simple as quickly editing a YAML file.
-    \item Introduced type safe Python to my coworkers which helped reduce
-          edge case bugs and aided generally in service architecture design.
-    \item Rewrote an HTTP library, used company wide, fixing many bugs.
+  \begin{itemize}
+    \item Rewrote the Medical Large Language Model software pipeline.
+    \item Built a deployment service, which enabled quick editing and testing of
+          different software pipelines via a simple YAML specification.
     \item Wrote a Visual Programming Language to allow designers to create
-          complex Alexa Skills, shortening design->deploy iteration time.
+          complex Amazon Alexa Skills, without code, shortening R\&D cycles.
+    \item Rewrote an internal HTTP library, fixing many concurrency bugs.
+    \item Introduced type safe Python, which reduced many edge-case bugs.
   \end{itemize}
-  \vgap
+
   \datedsubsection{Research Engineer - Emotech}{2017 - 2018}
-  \begin{itemize}\setlength\itemsep{0.25em}
-    \item Wrote a Visual Programming Language (Inga) to allow designers to
-          create complex behaviour for a smart-home robot assistant (Olly).
-    \item This language shortened "research -> design -> dev" cycles from
-          days/weeks to hours, sometimes minutes.
-    \item Built dozens of a distributed Golang microservices
-          (both embedded in the robot, and cloud-based).
-    \item Wrote a Natural Language Generation Engine, which augments
-          sentences with contextual information, and a hint of personality.
-    \item Introduced Trello to my workmates, championing Agile practices,
-          and improving communication and productivity across the company.
+  \begin{itemize}
+    \item Built a Visual Programming Language to allow designers to create
+          complex behaviour, without code, for a smart-home robot assistant,
+          shortening R\&D cycles from days/weeks to hours/minutes.
+    \item Built a Natural Language Generation Engine, which augments the
+          robot's speech with contextual information, and a hint of personality.
+    \item Introduced Trello to my workmates, championing Agile practices, and
+          improving communication and productivity across the company.
   \end{itemize}
-  \vgap
+
   \datedsubsection{Computer Vision Research Engineer Intern - Imperial College}{2017}
-  \begin{itemize}\setlength\itemsep{0.25em}
+  \begin{itemize}
     \item Wrote real-time person tracker, which runs on an Android phone.
   \end{itemize}
-  \vgap
+
   \datedsubsection{Financial Services Intern - Accenture}{2016}
-  \begin{itemize}\setlength\itemsep{0.25em}
+  \begin{itemize}
     \item Wrote a web app which took complex spreadsheets of reinsurance
           data, and visualises them in an interactive manner for stakeholders.
   \end{itemize}
-  \vgap
+
   \datedsubsection{Vice President - Imperial College Mental Health Society}{2015 - 2017}
-  \begin{itemize}\setlength\itemsep{0.25em}
-    \item Set up Imperial's first mental health awareness society and helped raise
-          over \pounds300,000 to improve Imperial's mental health services.
+  \begin{itemize}
+    \item Set up Imperial's first mental health awareness society and helped
+          raise over \pounds300,000 to improve Imperial's mental health services.
   \end{itemize}
-  \vgap
+
   \datedsubsection{IT Officer - Imperial College Dance Club}{2014 - 2017}
-  \begin{itemize}\setlength\itemsep{0.25em}
-    \item Wrote a mobile app which could be used to verify paid members,
-          using an extension I wrote for the Imperial Society API.
+  \begin{itemize}
+    \item Wrote a mobile app which could be used to verify paid members, using
+          an extension I wrote for the Imperial College Society API.
   \end{itemize}
-  \vgap
+
   \datedsubsection{Web Developer Intern - Twofour}{2011 \& 2012}
-  \begin{itemize}\setlength\itemsep{0.25em}
-    \item Built a Facebook-esque social network; complete with profiles, a
-          newsfeed, friendships, image galleries, comments, and likes.
+  \begin{itemize}
+    \item Built a Facebook-esque social network; complete with profiles, a newsfeed,
+          friendships, image galleries, comments, and likes.
   \end{itemize}
 
 \end{column}\begin{column}
@@ -112,22 +126,22 @@
     \item \textbf{Communication is key} for anything to succeed.
     \item \textbf{A sense of humour} goes a long way.
     \item \textbf{Never stop learning}, and raise those around you.
-    \item \textbf{Testing code} must be done early and often, and should be simple.
-    \item \textbf{Functional Programming = {\raise.15ex\hbox{<}}3}.
+    \item \textbf{Automate testing code}. Tests, types, smart compilers. Use them.
+    \item \textbf{Functional Programming {\raise.1em\hbox{= <}}3}.
   \end{itemize}
 
   \section{Skills}
   \subsection{Programming Languages}
-  I consider myself to be a polyglot. I'm passionate about learning new
-  programming languages, and keeping up to date with new paradigms.
+    I consider myself to be a polyglot. I'm passionate about learning
+    new programming languages, and keeping up to date with new paradigms.
   \begin{itemize}
-    \item \textbf{Proficient} Python, Go, Rust, JavaScript/TypeScript, Bash, Java,
+    \item \textbf{Proficient} Python, Rust, Go, JavaScript/TypeScript, Shell, Java,
           SQL, C/C++, OpenGL, HTML/CSS, Haskell, Lisp+Scheme, Elixir
     \item \textbf{Familiar} OCaml, Erlang, R, MATLAB, C\#, PHP, Ruby, BrainFuck
   \end{itemize}
   \subsection{Computing Tools and Utilities}
   \begin{itemize}
-    \item All OSs, CLIs, Git, Vim, VSCode, Docker, AWS, GCP, Cloudflare
+    \item All OSs, CLIs, Git, Vim, VSCode, Docker, K8s, AWS, GCP, Cloudflare
   \end{itemize}
 
   \section{Education}
@@ -144,36 +158,37 @@
     \item \textbf{Doodlr} Allows multiple users to paint together in real-time. Supports
           complex Photoshop-esque tools and image manipulation.
     \item \textbf{PintOS} A fully featured Operating System, in C.
-    \item \textbf{WACC Compiler} Written in Go. Compiles a C-like language to ARM
-          Assembly.
-    \item \textbf{Raspberry Pi Emulator} Wrote an ARM assembler and Raspberry
-          Pi emulator, in C.
+    \item \textbf{WACC Compiler} Compiles a C-like language to ARM Assembly.
+    \item \textbf{Raspberry Pi Emulator} Wrote an ARM assembler and VM, capable
+          of emulating a Raspberry Pi, all in C.
   \end{itemize}
 
   \section{Personal Projects}
-  I have over 100 personal projects, hosted at
+  I have over 150 personal projects, hosted at
   \myhref{https://github.com/JCGrant}{github.com/JCGrant}.\\
   Here are some of my favourites:
   \begin{itemize}
-    \item \textbf{Postr} A Social Media with profiles, reposts, media, \& comments.
-    \item \textbf{ProcGen} Various experiements in procedural generation.
+    \item \textbf{MC Haptics} A Bluetooth haptic feedback engine, built for Minecraft.
     \item \textbf{Multiplayer RPG} An MMO architecture with entity interpolation.
     \item \textbf{Chess RS} A chess engine written in Rust.
-    \item \textbf{Apollo} Record live music loops with friends over the internet.
-    \item \textbf{emojibot} AI chatbot which replies to natural language with emojis.
-    \item \textbf{glambda} Lambda calculus interpreter.
     \item \textbf{Twitch Paints Art} Livestreamed canvas. Users can paint via chat.
     \item \textbf{Kilo} A text editor, written in C. Includes syntax HL and searching.
     \item \textbf{Blox} A proxy allowing Minecraft plugins to be written in Go.
+    \item \textbf{glambda} Lambda calculus interpreter.
+    \item \textbf{emojibot} AI chatbot which replies to natural language with emojis.
+    \item \textbf{Postr} A Social Media with profiles, reposts, media, \& comments.
+    \item \textbf{ProcGen} Various experiements in procedural generation.
+    \item \textbf{Apollo} Record live music loops with friends over the internet.
   \end{itemize}
 
-  \section{Personal}
+  \section{Interests + Hobbies}
   \begin{itemize}
-    \item Hackathons, Project Euler, and other programming challenges.
+    \item Hackathons, Leetcode, Advent of Code, Project Euler, etc.
     \item Game development.
     \item Public speaking, Debating.
     \item Salsa dancing.
     \item Guitar, Piano, Singing.
+    \item Un poco de Espa\~nol.
   \end{itemize}
 
 \end{column}

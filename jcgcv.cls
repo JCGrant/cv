@@ -14,29 +14,30 @@
 \RequirePackage[margin=1cm]{geometry}
 
 \definecolor{grey}{rgb}{0.6, 0.6, 0.6}
-\definecolor{primarycolor}{HTML}{3c78d8}
+\definecolor{primarycolor}{HTML}{6de311}
+\newcommand{\fixTop}{\vspace{-0.4cm}}  % Fixes the incorrect height for the name and details minipages
 
 \titleformat{\section}
   {\Large\color{primarycolor}}
   {}{0em}{}
   [\titlerule]
+\titlespacing{\section}
+  {0em}{1em}{1em}
 
 \titleformat{\subsection}
   {\footnotesize\bfseries}
   {}{0em}{}
 \titlespacing{\subsection}
-  {0em}{0.3em}{0.1em}
+  {0em}{0.7em}{0em}
 
-
-\newcommand{\columnWidth}{0.475\textwidth}
 \newenvironment{column}
-  { \begin{minipage}[t][1.5cm][t]{\columnWidth} }
+  { \begin{minipage}[t][1.5cm][t]{0.475\textwidth} }
   { \end{minipage}\hfill }
 
-
 \newcommand{\name}[1]{%
-  \vspace{-0.35cm} % Fixes the incorrect height for the name and details minipages
-  \fontsize{36pt}{44pt}\selectfont{#1}%
+  \fixTop
+  \vspace{0.1cm}
+  \fontsize{36pt}{128pt}\selectfont{#1}%
 }
 
 \newcommand{\datedtext}[2]{%
@@ -49,12 +50,4 @@
 
 \newcommand{\myhref}[2]{%
   \href{#1}{\color{primarycolor}\setulcolor{primarycolor}\ul{#2}}%
-}
-
-\newcommand{\githublink}[1]{%
-  \myhref{https://github.com/JCGrant/#1}{github.com/JCGrant/#1}%
-}
-
-\newcommand{\vgap}{%
-  \vspace{1em}
 }
