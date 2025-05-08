@@ -18,7 +18,7 @@
 \newcommand{\fixTop}{\vspace{-0.4cm}}  % Fixes the incorrect height for the name and details minipages
 
 \titleformat{\section}
-  {\Large\color{primarycolor}}
+  {\Large\bfseries\color{primarycolor}}
   {}{0em}{}
   [\titlerule]
 \titlespacing{\section}
@@ -37,7 +37,7 @@
 \newcommand{\name}[1]{%
   \fixTop
   \vspace{0.1cm}
-  \fontsize{36pt}{128pt}\selectfont{#1}%
+  \fontsize{36pt}{128pt}\selectfont{\textbf{#1}}%
 }
 
 \newcommand{\datedtext}[2]{%
@@ -49,5 +49,5 @@
 }
 
 \newcommand{\myhref}[2]{%
-  \href{#1}{\color{primarycolor}\setulcolor{primarycolor}\ul{#2}}%
+  \href{#1}{\color{primarycolor}\setulcolor{primarycolor}\ul{\textbf{#2}}}%
 }
